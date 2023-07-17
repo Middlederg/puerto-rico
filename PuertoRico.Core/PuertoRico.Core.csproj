@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E4B9CFB-86B2-4CF1-BB42-49B487009A6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PuertoRico.Core</RootNamespace>
+    <AssemblyName>PuertoRico.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Util.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Util\Util.Core\bin\Debug\Util.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constantes.cs" />
+    <Compile Include="Enums\TipoRecurso.cs" />
+    <Compile Include="Interfaces\ICampo.cs" />
+    <Compile Include="Interfaces\IRuta.cs" />
+    <Compile Include="Interfaces\IVendible.cs" />
+    <Compile Include="Model\Barco.cs" />
+    <Compile Include="Model\Buildings\Aduana.cs" />
+    <Compile Include="Model\Buildings\AlmacenGrande.cs" />
+    <Compile Include="Model\Buildings\AlmacenPequeno.cs" />
+    <Compile Include="Model\Buildings\Anileria.cs" />
+    <Compile Include="Model\Buildings\AnileriaPequena.cs" />
+    <Compile Include="Model\Buildings\Ayuntamiento.cs" />
+    <Compile Include="Model\Buildings\Azucarera.cs" />
+    <Compile Include="Model\Buildings\AzucareraPequena.cs" />
+    <Compile Include="Model\Buildings\CasetaDeObra.cs" />
+    <Compile Include="Model\Buildings\Cofradia.cs" />
+    <Compile Include="Model\ColonizadorExtensions.cs" />
+    <Compile Include="Negocio\ConfiguracionInicial.cs" />
+    <Compile Include="Model\ConstructorExtensions.cs" />
+    <Compile Include="Model\Edificio.cs" />
+    <Compile Include="Model\EdificioProduccion.cs" />
+    <Compile Include="Model\Buildings\Fabrica.cs" />
+    <Compile Include="Model\Fields\Anil.cs" />
+    <Compile Include="Model\Fields\Azucar.cs" />
+    <Compile Include="Model\Fields\Cafe.cs" />
+    <Compile Include="Model\Campo.cs" />
+    <Compile Include="Model\Fields\Cantera.cs" />
+    <Compile Include="Model\Fields\Maiz.cs" />
+    <Compile Include="Model\Buildings\Fortaleza.cs" />
+    <Compile Include="Model\Buildings\Hacienda.cs" />
+    <Compile Include="Model\Buildings\Hospicio.cs" />
+    <Compile Include="Model\Buildings\MercadoGrande.cs" />
+    <Compile Include="Model\Buildings\MercadoPequeno.cs" />
+    <Compile Include="Model\Juego.cs" />
+    <Compile Include="Model\Mercancia.cs" />
+    <Compile Include="Model\Fields\Tabaco.cs" />
+    <Compile Include="Interfaces\IEdificio.cs" />
+    <Compile Include="Enums\TipoEdificio.cs" />
+    <Compile Include="Negocio\ObjectFactory.cs" />
+    <Compile Include="Model\Buildings\Muelle.cs" />
+    <Compile Include="Model\Buildings\Oficina.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Model\Profesion.cs" />
+    <Compile Include="Model\Buildings\Puerto.cs" />
+    <Compile Include="Model\Buildings\Residencia.cs" />
+    <Compile Include="Model\Buildings\SecaderoDeTabaco.cs" />
+    <Compile Include="Model\Buildings\TostaderoDeCafe.cs" />
+    <Compile Include="Model\Buildings\Universidad.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

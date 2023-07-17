@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A747EC3-AE7E-462C-8F4E-769BBC12D771}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PuertoRico.Media</RootNamespace>
+    <AssemblyName>PuertoRico.Media</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MediaExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anilOc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azucar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azucarOc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafeOc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cantera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canteraOc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canteraReverso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maizOc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plantacionReverso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabaco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabacoOc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oficina1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puerto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puerto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\residencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\residencia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secaderod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secaderod1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secaderod2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secaderod3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tostaderod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tostaderod1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tostaderod2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\universidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\universidad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aduana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aduana1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almaceng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almaceng1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anileria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anileria1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anileria2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anileria3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anileriap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anileriap1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuntamiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuntamiento1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azucarera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azucarera1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azucarera2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azucarera3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azucarerap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azucarerap1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casetad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casetad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cofradia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cofradia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabrica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabrica1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fortaleza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fortaleza1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hacienda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hacienda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospicio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercadog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercadog1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercadop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercadop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muelle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oficina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarrilAnil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarrilAzucar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarrilCafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarrilMaiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarrilTabaco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneda5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alcalde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscadordeoro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capataz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capitan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colonizador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\constructor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casadecomercio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edificios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isla.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
